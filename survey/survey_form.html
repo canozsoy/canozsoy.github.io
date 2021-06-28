@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Locations</a></li>
+                <li><a href="#" target="_blank">More Info</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="title-form">
+            <h1 id="title">
+                Survey Form
+            </h1>
+            <p id="description">
+                Please fill out the form for the vacation destinations.
+            </p>
+        </div>
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name:
+            </label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email" id="email-label"> 
+                Email:
+            </label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <label for="number" id="number-label">
+                Age (optional):
+            </label>
+            <input type="number" id="number" placeholder="Enter your age" min="5" max="130">
+            <label for="dropdown" id="select-label">
+                Choose one of them:
+            </label>
+            <select id="dropdown" required>
+                <option value="ayvalik">Ayvalık</option>
+                <option value="datca">Datça</option>
+                <option value="istanbul">İstanbul</option>
+                <option value="kas">Kaş</option>
+            </select>
+            <p id="question"> What is the expected budget for this vacation?</p>
+
+            <input type="checkbox" id="budget1" name="budget1" value="min">
+            <label class="checkbox-label" for="budget1">0-1000TL</label><br>
+            <input type="checkbox" id="budget2" name="budget2" value="low">
+            <label class="checkbox-label" for="budget2">1000-2000TL</label><br>
+            <input type="checkbox" id="budget3" name="budget3" value="high">
+            <label class="checkbox-label" for="budget3">2000-3000TL</label><br>
+            <input type="checkbox" id="budget4" name="bugdet4" value="max">
+            <label class="checkbox-label" for="budget4">3000-4000TL</label><br>
+            <textarea id="additional-elements" name="additional-elements" placeholder="Enter your comments here..."></textarea>
+            <button type="submit" id="submit" value="Submit">Submit</button>
+        </form>
+    </main>
+    <footer id="footer">
+        &copy Can Özsoy, February, 2021
+    </footer>
+</body>
+</html>
