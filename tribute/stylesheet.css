@@ -1,0 +1,64 @@
+@media (max-width: 600px) {
+    #tribute-info {
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        line-height: 2em;
+    }
+}
+
+@media (min-width: 600px) {
+    #tribute-info {
+        text-align: left;
+        margin-left: 25%;
+        margin-right: 25%;
+        line-height: 2em;
+    }
+}
+
+body {
+    background: rgb(240, 240, 240);
+    margin: 2% 1%;
+    text-align: center;
+}
+
+#main {
+    background: rgb(230, 230, 230);
+    border-radius: 2% 2% 2% 2%;
+}
+
+#page-title {
+    font-size: 24;
+    padding-top: 1em;
+}
+
+#img-div {
+    position: relative;
+    width: 90%;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    margin: auto;
+    background: rgb(240, 240, 240);
+}
+
+#image {
+    position: relative;
+    max-width: 90%;
+}
+
+#img-caption {
+    padding-top: 1em;
+}
+
+#tribute-title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#tribute-info .li {
+    line-height: 5em;
+}
+
+#quote {
+    margin: 2em 25% 2em 25%;
+}
