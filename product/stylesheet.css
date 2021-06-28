@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@media (min-width: 611px) {
+    * {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        color: whitesmoke;
+    }
+    #nav-img p {
+        font-size: 30px;
+        font-family: 'Signika', sans-serif;
+    }
+    #header-img {
+        max-height: 5vw;
+        margin-right: 1vw;
+    }
+    #nav-bar ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        margin-inline: 2vw;
+    }
+    #email {
+        width: 30vw;
+        height: 5vh;
+        color: black;
+        text-indent: 1vw;
+    }
+    #submit {
+        margin: 2vh;
+        width: 20vw;
+        height: 5vh;
+        background-color: #eba434;
+        color: whitesmoke;
+    }
+    #firstcontent,
+    #secondcontent,
+    #thirdcontent {
+        width: 60vw;
+        margin: 10vh auto;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #guitar-img,
+    #box-img,
+    #check-img {
+        height: 3vw;
+        margin: 1vh 2vw;
+    }
+    #video {
+        margin: 10vh auto;
+        width: 40vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+    }
+    #prices {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: stretch;
+        width: 60vw;
+        margin: 5vh auto;
+        text-align: center;
+        line-height: 200%;
+    }
+    footer ul {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 60vw;
+        margin-left: 20vw;
+        margin-right: 0vw;
+    }
+    footer ul li {
+        list-style-type: none;
+        padding: 0 3vw;
+    }
+}
+
+@media (max-width: 611px) {
+    * {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        color: whitesmoke;
+    }
+    #nav-img p {
+        display: none;
+    }
+    #header-img {
+        max-height: 20vw;
+        margin-right: 1vw;
+    }
+    #nav-bar ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        margin-inline: 1vw;
+    }
+    #email {
+        width: 60vw;
+        height: 5vh;
+        color: black;
+        text-indent: 1vw;
+    }
+    #submit {
+        margin: 2vh;
+        width: 40vw;
+        height: 5vh;
+        background-color: #eba434;
+        color: whitesmoke;
+    }
+    #firstcontent,
+    #secondcontent,
+    #thirdcontent {
+        width: 80vw;
+        margin: 10vh auto;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #guitar-img,
+    #box-img,
+    #check-img {
+        height: 7vw;
+        margin: 1vh 2vw;
+    }
+    #video {
+        margin: 10vh auto;
+        width: 80vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+    }
+    #prices {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 3);
+        justify-items: center;
+        align-items: stretch;
+        width: 80vw;
+        margin: 5vh auto;
+        text-align: center;
+        line-height: 200%;
+    }
+    footer ul {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    footer ul li {
+        list-style-type: none;
+        padding: 0 3vw;
+        font-size: 2.5vw;
+    }
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#header {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 1vw;
+}
+
+#nav-img {
+    display: inline-flex;
+    align-items: center;
+}
+
+#nav-bar {
+    display: inline-flex;
+    align-items: center;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+#title h1 {
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email:focus {
+    outline: none;
+}
+
+#submit:focus {
+    outline: none;
+}
+
+#prices div {
+    border: 1px solid #eba434;
+    padding: 2vw;
+}
+
+footer {
+    width: 100vw;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+}
+
+footer ul li:hover {
+    cursor: pointer;
+}
