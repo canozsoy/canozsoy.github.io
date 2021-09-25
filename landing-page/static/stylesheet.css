@@ -8,6 +8,12 @@ body {
     flex-direction: column;
 }
 
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+
 .header {
     display: flex;
     height: 50px;
@@ -16,7 +22,12 @@ body {
     justify-content: center;
     gap: 50px;
     background-color: #1f2937;
-    color: azure;
+}
+
+.header a {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 .header img {
@@ -29,14 +40,132 @@ body {
     justify-content: center;
     align-items: center;
     height: 200px;
+    gap: 100px;
     padding: 20px 20% 20px 20%;
+    background-color: #1f2937;
+    flex: 1;
 }
 
 .introContent div {
-    flex: 1;
+    flex: 0 1 40%;
+    color: azure;
+}
+
+.introContent div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .introContent img {
     max-width: 100%;
-    max-height: 100%;
+}
+
+.mainText {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.secondaryText {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.introContent button {
+    padding: 10px;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 5px;
+    color: #f9faf8;
+    font-size: 18px;
+}
+
+.introContent button:hover {
+    cursor: pointer;
+}
+
+.secondContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 20% 20px 20%;
+    height: 50vh;
+}
+
+.infoHeader {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: auto;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: auto;
+}
+
+.cardContainer div {
+    width: 200px;
+    text-align: center;
+}
+
+.secondContainer img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
+
+.thirdContainer {
+    background-color: #e5e7eb;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20% 20px 20%;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    margin-top: auto;
+    text-align: justify;
+}
+
+.quoter {
+    margin-left: auto;
+    padding-right: 50px;
+    margin-bottom: auto;
+}
+
+.fourthContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20% 20px 20%;
+    height: 25vh;
+}
+
+.actionContainer {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20% 40px 20%;
+    background-color: #1f2937;
 }
