@@ -67,12 +67,17 @@ body {
     color: #f9faf8;
 }
 
+.primaryText {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
 .secondaryText {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-.introContent button {
+button {
     padding: 10px;
     background-color: #3882f6;
     border: none;
@@ -158,8 +163,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 100px;
     gap: 100px;
+    border-radius: 10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actionBtn {
+    border: 2px solid #f9faf8;
+}
+
+.actionBtn:hover {
+    cursor: pointer;
 }
 
 .footer {
