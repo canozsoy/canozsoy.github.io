@@ -1,0 +1,22 @@
+#title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar:hover {
+    fill-opacity: 0.4;
+}
+
+.tooltip {
+    background-color: #404040;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px;
+    pointer-events: none;
+    border: 2px solid #8f8779;
+    border-radius: 3px;
+}
