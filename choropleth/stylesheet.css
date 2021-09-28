@@ -1,0 +1,17 @@
+#chartArea {
+    text-align: center;
+}
+
+#tooltip {
+    z-index: 1;
+    background-color: #404040;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    pointer-events: none;
+    border: 2px solid #8f8779;
+    border-radius: 3px;
+    line-height: 20px;
+}
