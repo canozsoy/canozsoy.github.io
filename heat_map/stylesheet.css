@@ -1,0 +1,29 @@
+#title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tooltip {
+    z-index: 1;
+    background-color: #404040;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    pointer-events: none;
+    border: 2px solid #8f8779;
+    border-radius: 3px;
+    line-height: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.cell:hover {
+    stroke: #000;
+    stroke-width: 1px;
+}
