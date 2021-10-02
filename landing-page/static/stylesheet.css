@@ -11,7 +11,7 @@ body {
 .firstContainer {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .header {
@@ -44,6 +44,7 @@ body {
     padding: 20px 20% 20px 20%;
     background-color: #1f2937;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .introContent div {
@@ -95,7 +96,7 @@ button {
     flex-direction: column;
     gap: 50px;
     padding: 20px 20% 20px 20%;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .infoHeader {
@@ -128,7 +129,7 @@ button {
 
 .thirdContainer {
     background-color: #e5e7eb;
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -155,7 +156,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 20px 20% 20px 20%;
-    height: 25vh;
+    min-height: 25vh;
 }
 
 .actionContainer {
@@ -188,4 +189,59 @@ button {
     align-items: center;
     padding: 40px 20% 40px 20%;
     background-color: #1f2937;
+}
+
+#responsive {
+    display: none;
+}
+
+@media (max-width: 475px) {
+    .header {
+        padding: 20px;
+    }
+    .header div {
+        display: none;
+    }
+    #responsive {
+        display: inline-block;
+        color: #e5e7eb;
+        max-height: 100%;
+    }
+    #responsive:hover {
+        color: #3882f6;
+        cursor: pointer;
+    }
+    .introContent {
+        padding: 40px;
+        gap: 20px;
+    }
+    .introContent div {
+        flex-basis: 100%;
+    }
+    .secondContainer {
+        padding: 40px;
+    }
+    .cardContainer {
+        flex-wrap: wrap;
+        gap: 20px
+    }
+    .thirdContainer {
+        padding: 40px;
+    }
+    .quote {
+        text-align: left;
+    }
+    .fourthContainer {
+        padding: 40px;
+    }
+    .actionContainer {
+        padding: 40px;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .footer {
+        padding: 20px;
+        font-size: 16px;
+    }
+    
 }
